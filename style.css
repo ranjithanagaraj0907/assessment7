@@ -1,0 +1,355 @@
+.heading{
+    
+  margin-top: -700px;
+    
+    display: flex;
+    justify-content: center;
+}
+.image1{
+    
+    height: 200px;
+    width: 1500px;
+}
+.image2{
+    background: url(./images/sky.jpg);
+    height: 400px;
+    width: 1500px;
+    
+}
+.image3{
+    height: 300px;
+    width: 1800px;
+    z-index: 1;
+    animation-name: moving-road;
+    animation-duration: 5s;
+    animation-delay: 0s;
+    animation-timing-function: linear;
+    animation-iteration-count:infinite ;
+
+    
+
+}
+@keyframes moving-road {
+  100%{
+  
+    transform: translateX(-300px)  
+  }
+  
+}
+.car{
+    position: absolute;
+    margin-top: -350px;
+ 
+   margin-left: 500px;
+    width: 500px;
+    height: 200px;
+}
+.wheel{
+ 
+    margin-top: -500px;
+    margin-bottom: 170px;
+    margin-left: 545px;
+    width: 90px;
+    height: 90px;
+    z-index: 1;
+    animation-name: rotating-wheel;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.wheel2{
+ 
+    margin-top: -500px;
+    margin-bottom: 185px;
+    margin-left: 850px;
+    width: 90px;
+    height: 90px;
+    z-index: 1;
+    animation-name: rotating-wheel;
+    animation-delay: 0s;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    
+}
+@keyframes rotating-wheel {
+  100%{
+    transform: rotate(360deg);
+  }
+  
+}
+
+
+.box1{
+    display: inline-block;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border:2px solid;
+    background-color:yellowgreen;
+    transition: width 2s;
+    margin-left: 40%;
+}
+
+.box1:hover {
+  width: 300px;
+}
+.box2{
+    display: block;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border:2px solid;
+    background-color:yellowgreen;
+    margin-top: 10px;
+    transition: width 2s;
+    margin-left: 40%;
+}
+.box2:hover {
+    width: 300px;
+    height: 300px;
+  }
+.box3{
+    display: block;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border:2px solid;
+    background-color:yellowgreen;
+    margin-top: 10px;
+    transition: width 2s;
+    transition-timing-function: linear;
+    margin-left: 40%;
+}
+.box3:hover {
+    width: 300px;
+    
+  }
+.box4{
+    display: block;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border:2px solid;
+    background-color:yellowgreen;
+    margin-top: 10px;
+    transition: width 2s;
+    transition-timing-function: ease;
+    margin-left: 40%;
+}
+.box4:hover {
+    width: 300px;
+    
+  }
+
+.box5{
+    display: block;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border:2px solid;
+    background-color:yellowgreen;
+    margin-top: 10px;
+    transition: width 2s;
+    transition-timing-function: ease-in;
+    margin-left: 40%;
+}
+.box5:hover {
+    width: 300px;
+    
+  }
+.box6{
+    display: block;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border:2px solid;
+    background-color:yellowgreen;
+    margin-top: 10px;
+    transition: width 2s;
+    transition-timing-function:ease-out;
+    margin-left: 40%;
+}
+.box6:hover {
+    width: 300px;
+    
+  }
+.box7{
+    display: block;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border:2px solid;
+    background-color:yellowgreen;
+    margin-top: 10px;
+    transition: width 2s;
+    transition-timing-function: ease-in-out;
+    margin-left: 40%;
+}
+.box7:hover {
+    width: 300px;
+    
+  }
+  .box{
+      background-color: yellow;
+      
+  }
+  .box11{
+    display:inline-block ;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    
+    border:2px solid;
+    background-color:blue;
+    margin-top: 10px;
+    animation: moving;
+    animation-duration: 3s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes moving{
+   100%{
+    
+    transform: skewY(20deg);
+    transform: rotateZ();
+   }
+  }
+  .box12{
+    display:inline-block ;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border:2px solid;
+    background-color:rgb(141, 141, 156);
+    margin-top: 20px;
+    animation: moving;
+    animation-duration: 3s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes moving{
+    100%{
+     
+     transform: skewY(20deg);
+     transform: rotateZ();
+    }
+   }
+  .box13{
+    display:inline-block ;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border:2px solid;
+    background-color:blue;
+    margin-top: 20px;
+    animation: moving-box13;
+    animation-duration: 3s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes moving-box13{
+    100%{
+     
+     transform: skewY(20deg);
+     transform: rotate(360deg);
+    }
+   }
+  .box14{
+    display: inline-block;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border:2px solid;
+    background-color:blue;
+    margin-top: 20px;
+    animation: moving-box14;
+    animation-duration: 3s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes moving-box14{
+    100%{
+     
+    
+        transform:rotateX(250deg) ;
+    
+    }
+   }
+
+  .box115{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+    animation: moving-box115;
+    animation-duration: 3s;
+    animation-delay: 0s;
+    border:2px solid;
+    animation-iteration-count: infinite;
+  }
+  @keyframes moving-box115{
+    100%{
+     
+    
+        transform:rotateY(250deg) ;
+    
+    }
+   }
+   .box116{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: yellowgreen;
+    animation: moving-box116;
+    animation-duration: 3s;
+    animation-delay: 0s;
+    border:2px solid;
+    animation-iteration-count: infinite;
+  }
+  @keyframes moving-box116{
+    100%{
+     
+    
+        transform:rotate(360deg) ;
+    
+    }
+   }
+   #main{
+    
+     margin-left: 40%;
+   }
+   .sun{
+     position: absolute;
+     height: 100px;
+     width: 100px;
+     margin-left:1300px;
+     animation-name: moving-sun;
+     animation-delay: 0s;
+     animation-iteration-count: infinite;
+     animation-duration: 2s;
+     animation-timing-function: linear;
+   }
+   @keyframes moving-sun {
+     100%{
+       transform: translateX(-300px);
+     }
+     
+   }
+   .flag{
+     height: 100px;
+     width: 100px;
+     position: absolute;
+     margin-left: 850px;
+     margin-top: 230px;
+   }
+
+   
+
+  
+ 
+
+
+
